@@ -1,0 +1,17 @@
+<html ng-app="s3upload_app">
+  <head>
+    <title>S3 Upload Demo</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="/client.js"></script>
+    <script>
+    </script>
+  </head>
+  <body>
+    <h1>S3 Upload Demo</h1>
+    <form ng-controller="UploadController">
+      <input id="fileInput" type="file" name="file" ng-model="file" s3upload/><br/>
+      <button ng-click="upload(file)">Upload</button>
+    </form>
+  </body>
+</html>
